@@ -21,18 +21,18 @@ float media[15];
 int menu = 0;
 int contador = 0;
 struct aluno_t alunos[15];
- setlocale(LC_ALL,"portuguese");
+ setlocale(LC_ALL,"Portuguese");
 
 
 
 
       do{
-      printf("Menu de opções\n");
-      printf("1 - Cadastro de aluno e lançamento de notas\n");
+      printf("Menu de opcoes\n");
+      printf("1 - Cadastro de aluno e lancamento de notas\n");
       printf("2 - Imprimiralunos cadastrados\n");
-      printf("3 - Documentação do programa\n");
+      printf("3 - Documentacao do programa\n");
       printf("4 - Encerramento do programa\n");
-      printf("\n Digite a opção desejada ");
+      printf("\n Digite a opcao desejada ");
       scanf("%i", &menu);
       printf("%i\n", menu);
 
@@ -40,7 +40,7 @@ struct aluno_t alunos[15];
 
         switch(menu){
         case 1:
-        printf("Digite os dois últimos numeros do ano de registro: ");
+        printf("Digite os dois ultimos numeros do ano de registro: ");
         scanf("%i", &ano[contador]);
 
         if(0<=ano[contador] && ano[contador]<100){
@@ -51,8 +51,8 @@ struct aluno_t alunos[15];
         if(1<=semestre[contador] && semestre[contador]<=2){
 
         printf("Cursos cadastrados: \n");
-        printf("1 - Ciência da computação;\n");
-        printf("2 - Engenharia de computação; \n");
+        printf("1 - Ciencia da computacao;\n");
+        printf("2 - Engenharia de computacao; \n");
         printf("3 - Gastronomia; \n");
         printf("4 - Moda; \n");
         printf("5 - Analise e desenvolvimento de sistemas; \n");
@@ -77,13 +77,13 @@ struct aluno_t alunos[15];
         curso[escolhacurso]= 606;
         break;
     case 6:
-        curso[escolhacurso]= 007;
+        curso[escolhacurso]= 7;
         break;
     default:
-        printf("Opção inválida");
+        printf("Opcao invalida");
 
         }
-        printf("Digite o código do aluno: ");
+        printf("Digite o codigo do aluno: ");
         scanf("%i", &alunos[contador].matricula);
 
         if(0<=alunos[contador].matricula && alunos[contador].matricula<=9999){
@@ -100,22 +100,22 @@ struct aluno_t alunos[15];
 
         media[contador] =  alunos[contador].nota1 +  alunos[contador].nota2;
 
-         printf("%i \n ", contador);
+         printf("%.2f \n ", media[contador]);
          contador++;
          printf(" Aluno cadastrado com sucesso. \n");
         } else{
         printf("**************************\n");
-        printf("Número invalida\n");
+        printf("Numero invalida\n");
         printf("**************************\n");
         }
         } else{
         printf("**************************\n");
-        printf("Número invalida\n");
+        printf("Numero invalida\n");
         printf("**************************\n");
         }
         } else{
         printf("**************************\n");
-        printf("Número invalido\n");
+        printf("Numero invalido\n");
         printf("**************************\n");
         }
         break;
@@ -129,7 +129,7 @@ struct aluno_t alunos[15];
 
         break;
         case 3:
-            printf("O programa ah seguir tem a função de cadastrar, matrículas, nomes e notas dos alunos,\n");
+            printf("O programa ah seguir tem a funcao de cadastrar, matriculas, nomes e notas dos alunos,\n");
             printf("Basta apenas selecionar a opção desejada.\n");
 
         break;
@@ -138,7 +138,7 @@ struct aluno_t alunos[15];
 
         break;
         default:
-        printf("Opção invalida\n");
+        printf("Opcao invalida\n");
         }
 
 
