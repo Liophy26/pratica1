@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (void){
-    int n1 = 3, n2 = 5;
+    int n1 = 4, n2 = 5;
     int *p;
     int *pont;
     p = &n1;
