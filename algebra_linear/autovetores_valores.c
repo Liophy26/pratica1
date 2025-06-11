@@ -79,6 +79,8 @@ int main()
         } else {
             y = 0;
         }
+        printf("\nmatriz diagonal:\n");
+        printf("[%.3f 0.00]\n[0.00 %.3f]\n", lambda,autovalor2);
          printf("auto vetor para lambda = %f.\n", lambda);
          printf("O auto vetor é a matriz transposta da matriz abaixo.\n");
          printf("v%d = [%.4f, %.4f]^T\n", i + 1, x, y);
